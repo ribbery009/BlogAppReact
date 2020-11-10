@@ -8,7 +8,6 @@ class FullPost extends Component {
         loadedPost: null
     }
 
-    
     componentDidMount () {
       this.loadData();  
       console.log("[FULL POST.js] DIDMOUNT")
@@ -38,6 +37,7 @@ class FullPost extends Component {
     }
 
     render () {
+        console.log("Rendering..[Fullpost.js]")
         let post = <p style={{ textAlign: 'center' }}>Please select a Post!</p>;
         if ( this.props.match.params.id) {
             post = <p style={{ textAlign: 'center' }}>Loading...!</p>;
